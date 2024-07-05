@@ -1,0 +1,24 @@
+#btns-content {
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid black;
+}
+
+.task-btn {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.task-btn:hover {
+  background-color: #888888;
+}
+
+#sort-by-date-btn {
+  margin-left: 315px;
+}
+
+#sort-by-priority {
+  margin-left: 20px;
+  margin-right: 66px;
+}

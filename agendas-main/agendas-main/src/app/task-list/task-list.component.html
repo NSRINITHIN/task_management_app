@@ -1,0 +1,17 @@
+<div id="tasks">
+  <div *ngIf="tasks.length == 0">
+    <h3>The task list is empty.</h3>
+  </div>
+  <div *ngIf="tasks.length != 0">
+    <h3 id="task-header" class="headers">Task</h3>
+    <h3 id="date-header" class="headers">Due Date</h3>
+    <h3 id="priority-header" class="headers">Priority</h3>
+  </div>
+  <app-task *ngFor="let task of tasks" [task]="task"></app-task>
+  <app-task-buttons class="form-controls"></app-task-buttons>
+  <div>
+    <app-task-form class="form-controls" (newTaskEvent)="addTask($event)"></app-task-form>
+    <app-task-edit-form class="form-controls" (changedTaskEvent)="editTask($event)"></app-task-edit-form>
+  </div>
+</div>
+<app-task-details></app-task-details>

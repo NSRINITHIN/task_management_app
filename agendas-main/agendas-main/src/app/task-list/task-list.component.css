@@ -1,0 +1,29 @@
+.headers {
+  display: inline-block;
+}
+
+#task-header {
+  padding-left: 5px;
+}
+
+#date-header {
+  padding-left: 360px;
+}
+
+#priority-header {
+  padding-left: 45px;
+}
+
+#tasks {
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  min-height: 100px;
+  min-width: 780px;
+  border: 1px solid black;
+}
+
+.form-controls {
+  vertical-align: top;
+  display: inline-block;
+}
